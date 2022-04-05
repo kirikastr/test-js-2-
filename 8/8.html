@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	
+	<button class="btn">Click me</button>
+
+	<div style="display: flex;">
+		<div class="div" style="width: 100px; height: 100px; display: none; background-color: orange"></div>
+
+		<div class="div2"  style="width: 100px; height: 100px; display: none; background-color: red; "></div>
+
+		<div class="div3" style="width: 100px; height: 100px; display: none;background-color: blue "></div>
+	</div>
+
+
+
+	<script>
+		document.querySelector(".btn").onclick = function(){
+			document.querySelector(".div").style.display = "block"
+			document.querySelector(".div2").style.display = "block"
+			document.querySelector(".div3").style.display = "block"
+
+		}
+	</script>
+	
+</body>
+</html>

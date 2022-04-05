@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1{
+			height: 200px;
+			width: 200px;
+			background-color: red;
+		}
+		.box2{
+			height: 200px;
+			width: 200px;
+			background-color: green;	
+		}
+		.box3{
+			height: 200px;
+			width: 200px;
+			background-color: yellow;	
+		}
+		.d-flex{
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+	<div class="d-flex">
+		<div class="box1">
+			
+		</div>
+		<div class="box2">
+			
+		</div>
+		<div class="box3">
+			
+		</div>
+	</div>
+
+	<script>
+		document.querySelector(".box1").onclick = function(){
+			alert("Red najat")
+			document.querySelector(".box2").style.height = "250px"
+		}
+
+		document.querySelector(".box2").onclick = function(){
+			alert("Blue najat")
+			document.querySelector(".box3").style.height = "250px"
+		}
+
+		document.querySelector(".box3").onclick = function(){
+			alert("Yellow najat")
+			document.querySelector(".box1").style.height = "250px"
+		}
+	</script>
+</body>
+</html>
